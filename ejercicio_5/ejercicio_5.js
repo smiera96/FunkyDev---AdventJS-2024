@@ -13,7 +13,7 @@ function organizeShoes(shoes) {
     return groupShoes.flatMap((item, size) => {
         const min = Math.min(item.R, item.I)
         return Array(min).fill(size)
-    });
+    })
 }
 
 const shoes = [
