@@ -1,5 +1,17 @@
 # 🎄 AdventJs 2024 - Retos / Challenges
 
+| 🌟 1  | 🌟 2  | 🌟 3  | 🌟 4  | 🌟 5  | 🌟 6  | 🌟 7  | 🌟 8  | 🌟 9  | 🌟 10 |
+|------|------|------|------|------|------|------|------|------|-------|
+| [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_1) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_2) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_3) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_4) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_5) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_6) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_7) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_8) | [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_9) |       |
+
+| 🌟 11 | 🌟 12 | 🌟 13 | 🌟 14 | 🌟 15 | 🌟 16 | 🌟 17 | 🌟 18 | 🌟 19 | 🌟 20 |
+|------|------|------|------|------|------|------|------|------|------|
+| [Link](https://github.com/smiera96/FunkyDev---AdventJS-2024/tree/main/reto_11) |      |      |      |      |      |      |      |      |      |
+
+| 🌟 21 | 🌟 22 | 🌟 23 | 🌟 24 | 🌟 25 |
+|------|------|------|------|------|
+|      |      |      |      |      |
+
 ## Español - Antes de copiar (si es que merece la pena)
 
 Este repositorio contiene los retos que he realizado para el AdventJs de 2024, una iniciativa de [@midudev](https://github.com/midudev).
