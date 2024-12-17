@@ -3,16 +3,28 @@
  * @returns {number[][]}
  */
 function detectBombs(grid) {
-    let map = grid.map(row => row.map(() => 0))
-    const dx = [-1, -1, -1, 0, 0, 1, 1, 1]
-    const dy = [-1, 0, 1, -1, 1, -1, 0, 1]
-    const increment = (x, y) =>
-        x >= 0 && x < map.length && y >= 0 && y < map[0].length ? map[x][y]++ : false
+    const rows = grid.length
+    const cols = grid[0].length
 
-    for (const [i, row] of grid.entries())
-        for (const [j, col] of row.entries())
-            if (grid[i][j] === true)
-                dx.forEach((item, index) => increment(i + (item), j + (dy[index])))
+    const dir = [
+        [-1, -1], [-1, 0], [-1, 1], [0, -1],
+        [0, 1], [1, -1], [1, 0], [1, 1]
+    ]
+    const map = Array.from({ length: rows }, () => Array(cols).fill(0))
+
+    for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+            if (grid[row][col]) {
+                for (const [dx, dy] of dir) {
+                    const newR = row + dx
+                    const newC = col + dy
+                    if (newR >= 0 && newR < rows && newC >= 0 && newC < cols) {
+                        map[newR][newC]++
+                    }
+                }
+            }
+        }
+    }
 
     return map
 }
