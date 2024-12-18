@@ -8,7 +8,7 @@ function isRobotBack(moves) {
     const robot = [0, 0]
     let order = null
 
-    for (const [m, item] of moves.split('').entries()) {
+    for (const item of moves.split('')) {
         if (['*', '!', '?'].includes(item)) {
             order = item
             continue
