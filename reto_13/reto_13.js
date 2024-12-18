@@ -3,7 +3,7 @@
  */
 function isRobotBack(moves) {
     const xy = {R: 1, L: -1, U: 1, D: -1}
-    const invertedDirections = { R: 'L', L: 'R', U: 'D', D: 'U' }
+    const invertedMoves = { R: 'L', L: 'R', U: 'D', D: 'U' }
     const prevMoves = {R: false, L: false, U: false, D: false}
     const robot = [0, 0]
     let order = null
@@ -18,7 +18,7 @@ function isRobotBack(moves) {
         let extra = order === '*' ? 1 : 0
 
         if (order === '!') {
-            pos = invertedDirections[item]
+            pos = invertedMoves[item]
         } else if (order === '?' && prevMoves[item]) {
             order = null
             continue
