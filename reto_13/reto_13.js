@@ -15,28 +15,18 @@ function isRobotBack(moves) {
         }
 
         let pos = item
-        let extra = 0
-        if (order) {
-            if (order === '*') {
-                extra++
-            } else if (order === '!') {
-                pos = invertedDirections[item]
-            } else {
-                if (prevMoves[item]) {
-                    order = null
-                    continue
-                }
-            }
+        let extra = order === '*' ? 1 : 0
 
+        if (order === '!') {
+            pos = invertedDirections[item]
+        } else if (order === '?' && prevMoves[item]) {
             order = null
+            continue
         }
 
-        if (['R', 'L'].includes(pos)) {
-            robot[0] += xy[pos] + extra
-        } else {
-            robot[1] += xy[pos] + extra
-        }
+        robot[['R', 'L'].includes(pos) ? 0 : 1] += xy[pos] + extra
         prevMoves[pos] = true
+        order = null
     }
 
     return robot[0] === 0 && robot[1] === 0 || robot
