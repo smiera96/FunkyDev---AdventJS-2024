@@ -15,9 +15,8 @@ function generateGiftSets(gifts) {
     }
 
     backtrack(0, [])
-    result.sort((a, b) => a.length - b.length)
 
-    return result
+    return result.sort((a, b) => a.length - b.length)
 }
 
 console.log(generateGiftSets(['car', 'doll', 'puzzle']))
