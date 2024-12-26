@@ -15,6 +15,7 @@ function isTreesSynchronized(tree1, tree2) {
     }
 
     const isSynchronized = ensureIsTreesSynchronized(tree1, tree2)
+
     return [isSynchronized, tree1.value]
 }
 
