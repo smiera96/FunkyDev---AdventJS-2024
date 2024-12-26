@@ -32,7 +32,6 @@ function execute(code) {
     return current
 }
 
-console.log(execute('[[-]]'))
 console.log(execute('+++')) // 3
 console.log(execute('+--')) // -1
 console.log(execute('>+++[-]')) // 0
