@@ -8,7 +8,7 @@ function findMissingNumbers(nums) {
     for (let i = 1; i <= maxNum; i++) {
         if (!nums.includes(i)) missing.push(i)
     }
-    return missing;
+    return missing
 }
 
 console.log(findMissingNumbers([1, 2, 4, 6]))
